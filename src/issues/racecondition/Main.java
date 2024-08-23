@@ -1,4 +1,4 @@
-package racecondition;
+package issues.racecondition;
 
 public class Main {
     public static void main(String[] args) {

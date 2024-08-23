@@ -1,4 +1,4 @@
-package racecondition;
+package solutions.racecondition;
 
 public class Contador {
 

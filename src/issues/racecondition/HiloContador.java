@@ -1,4 +1,4 @@
-package racecondition;
+package issues.racecondition;
 
 public class HiloContador implements  Runnable {
     private final Contador contador;

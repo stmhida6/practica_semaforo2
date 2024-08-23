@@ -1,4 +1,4 @@
-package starvation;
+package solutions.starvation;
 
 public class StarvationDemo {
 
