@@ -5,16 +5,24 @@ public class  DeadlockDemo {
     public static void main(String[] args)  throws InterruptedException {
         Object ob1 = new Object();
         Object ob2 = new Object();
+        Object ob3 = new Object();
+
         Thread t1 = new Thread(new SyncThread(ob1, ob2), "Thread-1");
         Thread t2 = new Thread(new SyncThread(ob2, ob1), "Thread-2");
+        Thread t3 = new Thread(new SyncThread(ob3, ob1), "Thread-3");
+
         t1.start();
         Thread.sleep(5000);
 
         t2.start();
         Thread.sleep(5000);
 
+        t3.start();
+
+
         t1.join();
         t2.join();
+        t3.join();
         System.out.println("Fin del programa");
 
 
